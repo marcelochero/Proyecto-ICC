@@ -1,5 +1,28 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+import time
+a="Iniciar juego"
+b="Instrucciones"
+c="Salir del juego"
+def Menu():
+    print("Bienvenido(s) a ahorcado, a continuación se les mostrará un menú con tres opciones: la primera, que es para iniciar el juego, la segunda que es para conocer las reglas\ne intrucciones y, por último, la opción de poder salir del juego.")
+    time.sleep(1)
+    print("* * * * * * * * * * * *")
+    print("*        Menú         *")
+    print("* 1 -",a,"  *")
+    print("* 2 -",b,"  *")
+    print("* 0 -",c,"*")
+    print("* * * * * * * * * * * *")
+    time.sleep(1)
+    return
+def JugaR():
+    J1 = input("Ingrese el nombre del jugador 1: ")
+    J2 = input("Ingrese el nombre del jugador 2: ")
+    while J1 == J2:
+        print("Por favor ingrese un nick diferente al otro.")
+        J2 = input("Ingrese el nombre del jugador 2: ")
+    palabra = input("Ingrese palabra a adivinar: ")
+    list=[]
 def JugaR():
     J1 = input("Ingrese el nombre del jugador 1: ")
     J2 = input("Ingrese el nombre del jugador 2: ")
