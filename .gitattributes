@@ -92,7 +92,7 @@ if x=="2":
     print("0 - Salir del juego")
     x=input("Escoja una opción: ")
     while x!="0" and x!="1":
-        print("Opción inválida.")
+        print("Opción fallida.")
         x=input("Escoja una opción válida: ")
     Jugar()
     Salir()
