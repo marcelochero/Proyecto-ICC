@@ -46,15 +46,15 @@ def JugaR():
         print("Suerte, que gane el mejor")
         while vidas>0:
             if vidas == 1:
-                print(vidas1,"te queda 1 vida")
+                print(vidas1,"solo te queda 1 vida")
             elif vidas == 2:
-                print(vidas2,"te queda 2 vidas")
+                print(vidas2,"solo te queda 2 vidas")
             elif vidas == 3:
-                print(vidas3,"te queda 3 vidas")
+                print(vidas3,"solo te queda 3 vidas")
             elif vidas == 4:
-                print(vidas4,"te queda 4 vidas")
+                print(vidas4,"solo te queda 4 vidas")
             elif vidas == 5:
-                print(vidas5,"te queda 5 vidas")
+                print(vidas5,"solo te queda 5 vidas")
             elif vidas == 6:
                 print(vidas6)
             if contador>0:
