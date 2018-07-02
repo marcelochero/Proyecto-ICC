@@ -16,16 +16,16 @@ def Menu():
     time.sleep(1)
     return
 def JugaR():
-    J1 = input("Ingrese el nombre del jugador 1: ")
-    J2 = input("Ingrese el nombre del jugador 2: ")
+    J1 = input("Escriba el nombre del jugador 1: ")
+    J2 = input("Escriba el nombre del jugador 2: ")
     while J1 == J2:
-        print("Por favor ingrese un nick diferente al otro.")
+        print("Por favor ingrese un nickname diferente al otro.")
         J2 = input("Ingrese el nombre del jugador 2: ")
     palabra = input("Ingrese palabra a adivinar: ")
     list=[]
 def JugaR():
-    J1 = input("Ingrese el nombre del jugador 1: ")
-    J2 = input("Ingrese el nombre del jugador 2: ")
+    J1 = input("Escriba el nombre del jugador 1: ")
+    J2 = input("Escriba el nombre del jugador 2: ")
     while J1 == J2:
         print("Por favor ingrese un nick diferente al otro.")
         J2 = input("Ingrese el nombre del jugador 2: ")
