@@ -75,3 +75,29 @@ def JugaR():
         if vidas == 0:
             print("Usted ha perdido todas sus vidas, el ganador es", J2, ". Felicitaciones!")
         return
+ def Salir():
+    if x=="0":
+        print("Hasta la próxima, esperamos volver a jugar pronto.")
+    return
+def Jugar():
+    if x=="1":
+        JugaR()
+    return
+Menu()
+time.sleep(1)
+x=input("Escoja una opción: ")
+if x=="2":
+    print("Este juego consta de dos jugadores: J1 y J2, cabe resaltar que, a la hora de iniciar el juego, podrán escoger cualquier nombre.El primero, J1, será quien jugará a adivinar\nla palabra, mientras que el segundo, J2, será quien escoja la palabra que J1 adivinará. J1 tendrá 6 vidas, es decir, tendrá la posibilidad de fallar como máximo 6 veces antes\nde que éste pierda y J2 gane el juego. El jugador J1 tendrá un tiempo de espera, el cual será de 5 segundos como máximo, para que pueda responder cada letra.\nEn caso de que pasen los 5 segundos sin responder letra alguna, el jugador J1 perderá una vida. En el caso de que la palabra escogida por J2 tenga una o más vocales\ny/o consonantes, se tendrá que repetir la letra, en el juego, cuantas veces tenga la palabra dicha letra.")
+    print("1 - Empezar a jugar")
+    print("0 - Salir del juego")
+    x=input("Escoja una opción: ")
+    while x!="0" and x!="1":
+        print("Opción inválida.")
+        x=input("Escoja una opción válida: ")
+    Jugar()
+    Salir()
+while x!="1" and x!="1" and x!="0":
+    print("Opción inválida.")
+    x=input("Escoja una opción válida: ")
+Salir()
+Jugar()
