@@ -93,7 +93,7 @@ if x=="2":
     x=input("Escoja una opción: ")
     while x!="0" and x!="1":
         print("Opción inválida.")
-        x=input("Escoja una opción válida: ")
+        x=input("Escoger una variable valida: ")
     Jugar()
     Salir()
 while x!="1" and x!="1" and x!="0":
