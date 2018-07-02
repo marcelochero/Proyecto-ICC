@@ -1,2 +1,54 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+def JugaR():
+    J1 = input("Ingrese el nombre del jugador 1: ")
+    J2 = input("Ingrese el nombre del jugador 2: ")
+    while J1 == J2:
+        print("Por favor ingrese un nick diferente al otro.")
+        J2 = input("Ingrese el nombre del jugador 2: ")
+    palabra = input("Ingrese palabra a adivinar: ")
+    list=[]
+    for i in palabra:
+        list.append(i)
+    contador=len(list)
+    palabraqueestaadivinando = ""
+    vidas = 6
+    vidas6 = "   \n  o\n /|\\ \n / \\"
+    vidas5 = "   \n  o\n /|\\ \n /  "
+    vidas4 = "   \n  o\n /|\\  "
+    vidas3 = "   \n  o\n /|   "
+    vidas2 = "   \n  o\n  |  "
+    vidas1 = "   \n  o"
+    if J1 != J2:
+        print("Suerte, que gane el mejor")
+        while vidas>0:
+            if vidas == 1:
+                print(vidas1,"te queda 1 vida")
+            elif vidas == 2:
+                print(vidas2,"te queda 2 vidas")
+            elif vidas == 3:
+                print(vidas3,"te queda 3 vidas")
+            elif vidas == 4:
+                print(vidas4,"te queda 4 vidas")
+            elif vidas == 5:
+                print(vidas5,"te queda 5 vidas")
+            elif vidas == 6:
+                print(vidas6)
+            if contador>0:
+                letradelnick1 = input("Ingrese una vocal o consonante:")[0:1]
+                palabraqueestaadivinando = palabraqueestaadivinando + letradelnick1
+                if letradelnick1 in palabra:
+                    contador = contador - 1
+                if letradelnick1 not in palabra:
+                    vidas = vidas - 1
+                for letra in palabra:
+                    if letra in palabraqueestaadivinando:
+                        print(letra, end=" ")
+                    else:
+                        print("*", end=" ")
+            if contador == 0:
+                print("Felicidades,", J1, "ha ganado el juego.")
+                break
+        if vidas == 0:
+            print("Usted ha perdido todas sus vidas, el ganador es", J2, ". Felicitaciones!")
+        return
